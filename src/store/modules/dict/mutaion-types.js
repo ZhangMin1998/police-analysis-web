@@ -1,0 +1,8 @@
+export const SET_TYPE_LIST = 'SET_TYPE_LIST'
+export const SET_NATION = 'SET_NATION'
+export const SET_AREA_TYPE_LIST = 'SET_AREA_TYPE_LIST'
+export const SET_SITE_TYPE = 'SET_SITE_TYPE'
+export const SET_DEVICE_TYPE = 'SET_DEVICE_TYPE'
+export const SET_ACCESS_TYPE = 'SET_ACCESS_TYPE'
+export const SET_PERSON_TYPE = 'SET_PERSON_TYPE'
+export const SET_Relation_TYPE_LIST = 'SET_Relation_TYPE_LIST'

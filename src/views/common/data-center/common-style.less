@@ -1,0 +1,105 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 236px);
+}
+
+.table-searchs {
+  display: flex;
+  align-items: center;
+  > div {
+    margin-right: 12px;
+  }
+}
+.PageHeader{
+  padding: 12px 24px;
+  margin: 0 8px;
+  // background: rgba(255, 255, 255, .02);
+  background: var(--table-pageHeader-bg-color) ;
+}
+
+.table-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 8px 0;
+  box-sizing: border-box;
+  /deep/.pagination {
+    margin-top: 32px;
+  }
+}
+.wrap-list {
+  margin-top: 24px;
+  position: relative;
+  padding: 16px 16px 24px;
+  background: var(--bg-color-2);
+  min-height: 60px;
+  .title {
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--base-text-color-to-999999);
+    span:nth-child(2) {
+      margin-left: 8px;
+      font-weight: 400;
+      color: var(--base-text-color-to-333333);
+    }
+  }
+}
+.division {
+  width: 1px;
+  height: 24px;
+  background: var(--division);
+  margin: 0 16px;
+}
+.opt_btn {
+  display: flex;
+  align-items: center;
+}
+/deep/.el-input--suffix {
+  .el-input__inner {
+    padding-left: 12px;
+    padding-right: 32px;
+    border-radius: 2px;
+    border-color: var(--border-color-input) !important;
+    &::placeholder {
+      color: var(--input-placehold-color);
+      font-size: 16px;
+    }
+    &:hover {
+      border-color: #3D4C75 !important;
+    }
+    &:focus {
+      border-color: #3D4C75 !important;
+    }
+  }
+  .el-input__suffix {
+    right: 12px;
+    .icon-sousuo {
+      font-size: 16px;
+      color: var(--input-placehold-color);
+      line-height: 40px;
+      cursor: pointer;
+    }
+    img {
+      width: 16px;
+      height: 16px;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+  }
+}
+/deep/.PageHeader .el-input .el-icon-circle-close {
+  width: 16px;
+  position: absolute;
+  right: 18px;
+  top: 1px;
+  color: var(--input-placehold-color) !important;
+}
+/deep/.PageHeader .el-icon-circle-close:hover {
+  color: var(--active-color) !important;
+}
+
+/deep/.PageHeader_main_content {
+  padding: 0;
+}

@@ -1,0 +1,109 @@
+
+// 火狐滚动条
+* {
+  scrollbar-color: rgba(81, 92, 124, .32) transparent; /* 滑块颜色  滚动条背景颜色 */
+  scrollbar-width: thin; /* 滚动条宽度有三种：thin、auto、none */
+}
+
+// body{
+// /* 滑动条的颜色 */
+// scrollbar-face-color:red;
+// scrollbar-base-color:red;
+
+// /* 滑动条边框的颜色 */
+// scrollbar-shadow-color:red;
+
+// /* 槽的颜色 */
+// scrollbar-highlight-color:red;
+// scrollbar-track-color:red;
+
+// /* 箭头的颜色 */
+// scrollbar-arrow-color:red;
+// scrollbar-3dlight-color: red; /**//*立体滚动条亮边的颜色*/
+// scrollbar-darkshadow-color: red; /**//*立体滚动条强阴影的颜色*/
+// }
+
+// 滚动条默认样式
+/deep/&::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+  &:hover {
+    height: 16px;
+  }
+  // background: transparent;
+}
+
+/deep/&::-webkit-scrollbar-thumb {
+  background: rgba(81, 92, 124, .32);
+  border-radius:10px;
+}
+
+/deep/&:hover::-webkit-scrollbar-thumb {
+  background: rgba(81, 92, 124, .32);
+}
+
+/deep/&:hover::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius:2px;
+}
+/deep/&::-webkit-scrollbar-corner{
+  // background: rgba(255, 255, 255, 0.18);
+  background: transparent;
+}
+
+
+/*修改滚动条样式*/
+// div::-webkit-scrollbar , ul::-webkit-scrollbar {
+//   width:6px;
+//   height:6px;
+//   /**/
+// }
+// div::-webkit-scrollbar-track, ul::-webkit-scrollbar-track{
+//   background: transparent;
+//   border-radius:2px;
+// }
+// div::-webkit-scrollbar-thumb, ul::-webkit-scrollbar-thumb{
+//   background: rgba(255, 255, 255, 0.18);
+//   border-radius:10px;
+// }
+// div::-webkit-scrollbar-thumb:hover,ul::-webkit-scrollbar-thumb:hover{
+//   background: rgba(255, 255, 255, 0.18)
+// }
+// div::-webkit-scrollbar-corner, ul::-webkit-scrollbar-corner{
+//   background: transparent;
+// }
+
+.el-drawer__body::-webkit-scrollbar{
+  width:6px;
+  height:6px;
+  /**/
+}
+.el-drawer__body::-webkit-scrollbar-track{
+  background: transparent;
+  border-radius:2px;
+}
+.el-drawer__body::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.18);
+  border-radius:10px;
+}
+.el-drawer__body::-webkit-scrollbar-thumb:hover{
+  background: rgba(255, 255, 255, 0.18)
+}
+.el-drawer__body::-webkit-scrollbar-corner{
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+.el-tab-pane .el-main {
+  overflow-y:hidden;
+}
+
+
+input::-ms-clear{display:none;}
+
+
+input[type="password"]::-ms-reveal{
+  display:none;
+}
+
+

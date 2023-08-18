@@ -1,0 +1,112 @@
+{
+  "list": [
+    {
+      "carNumber": "赣B88888",
+      "placeId": 11,
+      "status": "",
+      "placeLatitude": 23.186641,
+      "placeLongitude": 112.25367,
+      "location": [112.25367, 23.186641],
+      "placeName": "清",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771106000,
+      "dataTypeStr": "核酸记录"
+    },
+    {
+      "carNumber": "赣B99999",
+      "placeId": 11,
+      "status": "",
+      "placeLatitude": 23.186641,
+      "placeLongitude": 112.25367,
+      "location": [112.25367, 23.186641],
+      "placeName": "家里蹲",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650763073000,
+      "dataTypeStr": "防疫登记"
+    },
+    {
+      "carNumber": "赣B00000",
+      "placeId": 3,
+      "status": "",
+      "placeLatitude": 23.194166,
+      "placeLongitude": 112.298246,
+      "location": [112.298246, 23.194166],
+      "placeName": "歪得其肯大学",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771606000,
+      "dataTypeStr": "核酸记录"
+    },
+    {
+      "carNumber": "赣B22222",
+      "placeId": 4,
+      "status": "",
+      "placeLatitude": 23.169846,
+      "placeLongitude": 112.276285,
+      "location": [112.276285, 23.169846],
+      "placeName": "哈佛大学",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650763073000,
+      "dataTypeStr": "银行业务"
+    },
+    {
+      "carNumber": "赣B55555",
+      "placeId": 5,
+      "status": "",
+      "placeLatitude": 23.133816,
+      "placeLongitude": 112.368564,
+      "location": [112.368564, 23.133816],
+      "placeName": "斯坦福大学如果如火如荼",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771606000,
+      "dataTypeStr": "运营商业务"
+    },
+    {
+      "carNumber": "赣B55555",
+      "placeId": 5,
+      "status": "",
+      "placeLatitude": 23.133816,
+      "placeLongitude": 112.368564,
+      "location": [112.368564, 23.133816],
+      "placeName": "四川大学人体感染他人",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771606000,
+      "dataTypeStr": "手机卡业务"
+    },
+    {
+      "carNumber": "赣B55555",
+      "placeId": 6,
+      "status": "",
+      "placeLatitude": 23.18816,
+      "placeLongitude": 112.368564,
+      "location": [112.368564, 23.18816],
+      "placeName": "青岛大学",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771606000,
+      "dataTypeStr": "核酸记录"
+    },
+    {
+      "carNumber": "赣B55555",
+      "placeId": 6,
+      "status": "",
+      "placeLatitude": 23.18816,
+      "placeLongitude": 112.368564,
+      "location": [112.368564, 23.18816],
+      "placeName": "集美大学",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771606000,
+      "dataTypeStr": "WIFI探针"
+    },
+    {
+      "carNumber": "赣B55555",
+      "placeId": 6,
+      "status": "",
+      "placeLatitude": 23.18816,
+      "placeLongitude": 112.368564,
+      "location": [112.368564, 23.18816],
+      "placeName": "深圳大学",
+      "time": "2022/04/24 11:31:46",
+      "timestamp": 1650771606000,
+      "dataTypeStr": "旅业数据"
+    }
+  ]
+}

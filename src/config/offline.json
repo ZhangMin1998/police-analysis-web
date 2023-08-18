@@ -1,0 +1,287 @@
+// {
+//   "title": "安乡大数据实战平台",
+//   "header": [
+//     { "navTitle": "设备地图", "componentName": "OlMap", "name": "devicemap" },
+//     { "navTitle": "数据中心", "componentName": "DataCenter", "name": "datacenter" },
+//     { "navTitle": "分析研判", "componentName": "AnalysisJudgement", "name": "analysis" },
+//     { "navTitle": "异常预警", "componentName": "FeatureWarning", "name": "featureWarning" }
+//   ],
+//   "routes": [
+//     {
+//       "path": "/ol/devicemap",
+//       "component": "Layout",
+//       "meta": {},
+//       "children": [
+//         {
+//           "path": "/",
+//           "name": "devicemap",
+//           "meta": {
+//             "title": "设备地图",
+//             "icon": "link",
+//             "belong": "devicemap"
+//           },
+//           "component": "devicemap"
+//         },
+//         {
+//           "path": "devicelist",
+//           "name": "devicelist",
+//           "meta": { "title": "设备列表", "icon": "link", "belong": "devicemap" },
+//           "component": "@/views/common/devicemap/deviceList"
+//         },
+//         {
+//           "path": "developing",
+//           "name": "developing",
+//           "meta": { "title": "异常预警", "icon": "link" },
+//           "component": "@/views/developing"
+//         }
+//       ]
+//     },
+//     {
+//       "path": "/ol/datacenter",
+//       "component": "Layout",
+//       "meta": {
+//         "navList": [
+//           {
+//             "normalImg": "icon-0-query.png",
+//             "activeImg": "icon-0-query-active.png",
+//             "pathName": "datacenter",
+//             "title": "线索查询"
+//           },
+//           {
+//             "normalImg": "icon-1-query.png",
+//             "activeImg": "icon-1-query-active.png",
+//             "pathName": "carDiscern",
+//             "title": "车辆识别"
+//           },
+//           {
+//             "normalImg": "icon-2-query.png",
+//             "activeImg": "icon-2-query-active.png",
+//             "pathName": "probeData",
+//             "title": "探针数据"
+//           },
+//           {
+//             "normalImg": "icon-3-query.png",
+//             "activeImg": "icon-3-query-active.png",
+//             "pathName": "auditData",
+//             "title": "审计数据"
+//           }
+//         ],
+//         "hidden": false
+//       },
+//       "children": [
+//         {
+//           "path": "/",
+//           "name": "datacenter",
+//           "component": "@/views/common/data-center",
+//           "meta": {
+//             "title": "数据中心",
+//             "hidden": false,
+//             "belong": "datacenter"
+//           }
+//         },
+//         {
+//           "path": "queryResults",
+//           "name": "queryResults",
+//           "meta": {
+//             "title": "查询结果",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "datacenter",
+//             "leftBelong": "datacenter"
+//           },
+//           "component": "@/views/common/all-archives/queryResults"
+//         },
+//         {
+//           "path": "carDiscern",
+//           "name": "carDiscern",
+//           "component": "@/views/common/data-center/parking-record",
+//           "meta": {
+//             "title": "车辆识别",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "datacenter"
+//           }
+//         },
+//         {
+//           "path": "probeData",
+//           "name": "probeData",
+//           "component": "@/views/common/data-center/probe-data",
+//           "meta": {
+//             "title": "探针数据",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "datacenter"
+//           }
+//         },
+//         {
+//           "path": "auditData",
+//           "name": "auditData",
+//           "component": "@/views/common/data-center/audit-data",
+//           "meta": {
+//             "title": "审计数据",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "datacenter"
+//           }
+//         }
+//       ]
+//     },
+//     {
+//       "path": "/ol/keyPersonnelBase",
+//       "component": "Layout",
+//       "meta": {
+//         "hidden": false,
+//         "navList": [
+//           {
+//             "normalImg": "icon-0-person.png",
+//             "activeImg": "icon-0-person-active.png",
+//             "pathName": "keyPersonnelBase",
+//             "title": "重点人员库"
+//           }
+//         ]
+//       },
+//       "children": [
+//         {
+//           "path": "/",
+//           "name": "keyPersonnelBase",
+//           "component": "@/views/common/all-archives/person-important",
+//           "meta": {
+//             "title": "重点人员库",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "keyPersonnelBase",
+//             "leftBelong": "keyPersonnelBase"
+//           }
+//         },
+//         {
+//           "path": "/PersonnelFile/:id",
+//           "name": "PersonnelFile",
+//           "meta": {
+//             "title": "查看档案",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "keyPersonnelBase",
+//             "leftBelong": "keyPersonnelBase"
+//           },
+//           "component": "@/views/common/all-archives/PersonnelFile"
+//         },
+//         {
+//           "path": "/penalColonyInfo/:id",
+//           "name": "penalColonyInfo",
+//           "meta": {
+//             "title": "查看监管拘留信息",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "keyPersonnelBase",
+//             "leftBelong": "keyPersonnelBase"
+//           },
+//           "component": "@/views/common/all-archives/penalColonyInfo"
+//         },
+//         {
+//           "path": "/drugAddictsInfo/:id",
+//           "name": "drugAddictsInfo",
+//           "meta": {
+//             "title": "查看戒毒信息",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "keyPersonnelBase",
+//             "leftBelong": "keyPersonnelBase"
+//           },
+//           "component": "@/views/common/all-archives/drugAddictsInfo"
+//         }
+//       ]
+//     },
+//     {
+//       "path": "/ol/analysis",
+//       "component": "Layout",
+//       "meta": {
+//         "navList": [
+//           {
+//             "normalImg": "icon-zuoxi.png",
+//             "activeImg": "icon-zuoxi-active.png",
+//             "pathName": "analysis",
+//             "title": "作息分析"
+//           },
+//           {
+//             "normalImg": "icon-pengzhuang.png",
+//             "activeImg": "icon-pengzhuang-active.png",
+//             "pathName": "spaceTimeCollision",
+//             "title": "时空特征碰撞"
+//           }
+//         ]
+//       },
+//       "children": [
+//         {
+//           "path": "/",
+//           "name": "analysis",
+//           "component": "@/views/offline/analysisJudgement/index",
+//           "meta": {
+//             "title": "分析研判",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "analysis"
+//           }
+//         },
+//         {
+//           "path": "analysis/spaceT-time-collision",
+//           "name": "spaceTimeCollision",
+//           "component": "@/views/offline/analysis/space-time-collision",
+//           "meta": {
+//             "title": "时空特征碰撞",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "analysis"
+//           }
+//         }
+//       ]
+//     },
+//     {
+//       "path": "/ol/featureWarning",
+//       "component": "Layout",
+//       "meta": {
+//         "navList": [
+//           {
+//             "normalImg": "icon-1-per.png",
+//             "activeImg": "icon-1-per-active.png",
+//             "pathName": "featureWarning",
+//             "title": "特征预警"
+//           }
+//         ]
+//       },
+//       "children": [
+//         {
+//           "path": "",
+//           "name": "featureWarning",
+//           "meta": {
+//             "title": "特征预警",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "featureWarning"
+//           },
+//           "component": "_off/trackWarning/featureWarning"
+//         }
+//       ]
+//     },
+//     {
+//       "path": "/ol/systemsetting",
+//       "component": "Layout",
+//       "meta": {},
+//       "children": [
+//         {
+//           "path": "/",
+//           "name": "systemsetting",
+//           "meta": {
+//             "title": "系统设置",
+//             "icon": "link",
+//             "hidden": false,
+//             "belong": "systemsetting"
+//           }
+//         }
+//       ]
+//     },
+//     {
+//       "path": "*",
+//       "redirect": "/ol/devicemap"
+//     }
+//   ]
+// }
